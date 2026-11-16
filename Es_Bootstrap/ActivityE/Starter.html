@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feisbuc UI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <!-- Navbar responsive -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm" aria-label="Navigazione principale">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Feisbuc</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Apri menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <form class="d-flex my-2 my-lg-0 me-auto" role="search">
+            <input class="form-control form-control-sm" type="search" placeholder="Cerca su Feisbuc..." aria-label="Cerca">
+          </form>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Amici</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Notifiche</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Layout mobile-first -> desktop 3/6/3 -->
+  <div class="container my-4">
+    <div class="row g-4">
+      
+      <!-- Sidebar sinistra (3 colonne su lg) -->
+      <aside class="col-12 col-lg-3 d-none d-lg-block" aria-label="Menu rapido">
+        <div class="list-group shadow-sm">
+          <a href="#" class="list-group-item list-group-item-action active">Feed notizie</a>
+          <a href="#" class="list-group-item list-group-item-action">Gruppi</a>
+          <a href="#" class="list-group-item list-group-item-action">Eventi</a>
+        </div>
+      </aside>
+
+      <!-- Feed centrale (6 colonne su lg) -->
+      <main class="col-12 col-lg-6">
+        <article class="card shadow-sm mb-3">
+          <header class="card-header bg-white border-0 pt-3 d-flex align-items-center gap-2">
+            <div class="avatar-placeholder rounded-circle bg-secondary text-white d-flex justify-content-center align-items-center fw-bold">MR</div>
+            <div>
+              <h2 class="h6 mb-0">Mario Rossi</h2>
+              <time class="text-muted small" datetime="2026-11-16">2 ore fa</time>
+            </div>
+          </header>
+          <div class="card-body">
+            <p class="card-text">Primo prototipo di interfaccia social realizzato con la griglia a 12 colonne di Bootstrap 5.3!</p>
+          </div>
+          <footer class="card-footer bg-white d-flex justify-content-around">
+            <button type="button" class="btn btn-sm btn-outline-primary">Mi piace</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Commenta</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Condividi</button>
+          </footer>
+        </article>
+      </main>
+
+      <!-- Sidebar destra (3 colonne su lg) -->
+      <aside class="col-12 col-lg-3" aria-label="Contatti e suggerimenti">
+        <section class="card shadow-sm">
+          <div class="card-body">
+            <h2 class="h6 card-title">Contatti online</h2>
+            <ul class="list-unstyled mb-0 small">
+              <li class="py-1">🟢 Giulia Bianchi</li>
+              <li class="py-1">🟢 Luca Verdi</li>
+            </ul>
+          </div>
+        </section>
+      </aside>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

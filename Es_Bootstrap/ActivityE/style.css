@@ -1,0 +1,7 @@
+/* Solo ciò che Bootstrap non copre nativamente */
+.avatar-placeholder {
+  width: 40px;
+  height: 40px;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
